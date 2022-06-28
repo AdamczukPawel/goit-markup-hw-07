@@ -6,11 +6,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-*,
-*::after *::before {
-  margin: 0;
-  padding: 0;
-}
+
 input:focus,
 textarea:focus {
   outline: none;
@@ -43,11 +39,13 @@ footer {
   display: inline;
 }
 
-.container .container-item1 {
-  display: flex;
+.header__navigation {
   margin-left: auto;
 }
-.container-item1 .navigation-item:not(:last-child) {
+.header__contact {
+  margin-left: auto;
+}
+.navigation__item {
   margin-right: 46px;
 }
 .mail {
@@ -81,7 +79,7 @@ footer {
   text-decoration: none;
   fill: currentColor;
 }
-.logo > span {
+.logo__color1 {
   color: #2196f3;
 }
 header {
