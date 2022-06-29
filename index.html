@@ -18,26 +18,26 @@
 
 <body>
     <header class="header">
-        <div class="container header_container">
+        <div class="container header__container">
             <a href="index.html" class="logo"> <span class="logo__color1">Web</span>Studio</a>
             <div>
-                <nav class="container-item1 header__navigation">
+                <nav class="header__navigation">
                     <ul class="navigation">
-                        <li class="navigation__item"><a class="link active" href="index.html">Agencja</a></li>
-                        <li class="navigation__item"><a class="link" href="portfolio.html">Portfolio</a></li>
-                        <li class="navigation__item"><a class="link" href="">Kontakt</a></li>
+                        <li class="navigation__item"><a class="header__link header__link--active" href="index.html">Agencja</a></li>
+                        <li class="navigation__item"><a class="header__link" href="portfolio.html">Portfolio</a></li>
+                        <li class="navigation__item"><a class="header__link" href="">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="contact container-item1 header__contact">
-                <a href="mailto:info@devstudio.com" class="link mail">
-                    <svg width="16px" height="12px">
+            <div class="contact header__contact">
+                <a href="mailto:info@devstudio.com" class="header__link contact__link">
+                    <svg width="16px" height="12px" class="contact__icon">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com
                 </a>
-                <a href="tel:+48111111111" class="link tel">
-                    <svg width="16px" height="12px">
+                <a href="tel:+48111111111" class="header__link contact__link">
+                    <svg width="16px" height="12px" class="contact__icon">
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>
                     +48 111 111 111
@@ -46,60 +46,58 @@
         </div>
     </header>
     <section class="advert">
-        <div class="hero">
         <div class="container">
-            <h1 class="title advert-item">EFEKTYWNE ROZWIĄZANIA DLA BIZNESU</h1>
-            <button class="button1 advert-item" type="button" data-modal-open>Zamów usługę</button>
-        </div>
+            <h1 class="title advert__item">EFEKTYWNE ROZWIĄZANIA DLA BIZNESU</h1>
+            <button class="advert__button" type="button" data-modal-open>Zamów usługę</button>
         </div>
     </section>
-    <section>
+    <section class="advantages">
         <div class="container">
-            <ul class="list1">
-                <li class="text1">
-                    <div class="lorem-icon">
+            <ul class="list1 advantages__list">
+                <li class="feature">
+                    <div class="feature__icon">
                         <svg width="70px" height="70px">
                             <use href="./images/icons.svg#icon-antenna"></use>
                         </svg>
                     </div>
-                    <div class="text1-title">LOREM IPSUM</div>
+                    <div class="feature__title">LOREM IPSUM</div>
                     <div class="text1-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed non sodales dui. Interdum et malesuada</div>
                 </li>
-                <li class="text1">
-                    <div class="lorem-icon">
+                <li class="feature">
+                    <div class="feature__icon">
                         <svg width="70px" height="70px">
                             <use href="./images/icons.svg#icon-clock"></use>
                         </svg>
                     </div>
-                    <div class="text1-title">LOREM IPSUM</div>
+                    <div class="feature__title">LOREM IPSUM</div>
                     <div class="text1-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed non sodales dui. Interdum et malesuada</div>
                 </li>
-                <li class="text1">
-                    <div class="lorem-icon">
+                <li class="feature">
+                    <div class="feature__icon">
                         <svg width="70px" height="70px">
                             <use href="./images/icons.svg#icon-diagram"></use>
                         </svg>
                     </div>
-                    <div class="text1-title">LOREM IPSUM</div>
+                    <div class="feature__title">LOREM IPSUM</div>
                     <div class="text1-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed non sodales dui. Interdum et malesuada</div>
                 </li>
-                <li class="text1">
-                    <div class="lorem-icon">
+                <li class="feature">
+                    <div class="feature__icon">
                         <svg width="70px" height="70px">
                             <use href="./images/icons.svg#icon-astronaut"></use>
                         </svg>
                     </div>
-                    <div class="text1-title">LOREM IPSUM</div>
+                    <div class="feature__title">LOREM IPSUM</div>
                     <div class="text1-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed non sodales dui. Interdum et malesuada</div>
                 </li>
             </ul>
         </div>
     </section>
-    <section>
+    <section class="what-we-do">
         <div class="container">
             <h2 class="title2">Czym się zajmujemy</h2>
             <ul class="list2">
