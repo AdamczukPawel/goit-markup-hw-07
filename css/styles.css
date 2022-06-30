@@ -108,7 +108,7 @@ footer {
 }
 
 /* ADVERT */
-.title {
+.main-title {
   font-family: Roboto;
   color: #ffffff;
   font-weight: 900;
@@ -118,6 +118,8 @@ footer {
   width: 696px;
   text-align: center;
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .advert {
   background-image: linear-gradient(
@@ -137,10 +139,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.title {
-  padding-top: 200px;
-  padding-bottom: 30px;
 }
 .advert__button {
   border-radius: 4px;
@@ -189,30 +187,25 @@ footer {
   margin-right: 30px;
 }
 /* WHAT ARE WE DOING */
-h2 {
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
-.container .list2 {
-  padding: 0;
-}
-.list2 .box1 {
-  margin: 0;
-}
-
-.container .list2 {
+.what-we-do__list {
   display: flex;
   align-content: space-between;
 }
-.box1 {
+.what-we-do__element {
   position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.box1 > .box1-label {
+.what-we-do__label {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 15px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -220,27 +213,19 @@ h2 {
   width: 370px;
   height: 70px;
   margin: 0;
-}
-.box1-label {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.box1:not(:last-child) {
-  padding-right: 30px;
-}
-.title2 {
-  margin-bottom: 50px;
-}
 /* TEAM */
-.team .container {
+.team__container {
   margin-top: 94px;
   padding: 94px 0;
 }
-.team-title {
+.team__title {
   margin-bottom: 50px;
 }
-.text2 {
+.johns__member {
   color: #757575;
   font-size: 16px;
   line-height: 1.19;
@@ -256,19 +241,19 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.john-figcaption {
+.johns__figcaption {
   margin: 30px auto;
 }
-.standing {
-  margin-top: 10px;
+.johns__standing {
+  margin: 10px auto;
 }
-.team-member img {
+.johns__picture {
   margin: 0;
   padding: 0;
   display: inline;
   justify-content: flex-start;
 }
-.text2 .team-member {
+.johns__figure {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -277,11 +262,10 @@ h2 {
 .team {
   background-color: #f5f4fa;
 }
-.accent {
+.johns__name {
   color: #212121;
   font-weight: 500;
 }
-
 .social-links {
   margin: 0px auto 0px auto;
   width: 206px;
@@ -289,7 +273,7 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-.social-links-icon {
+.social-links__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,19 +283,19 @@ h2 {
   background-color: #ffffff;
   fill: #afb1b8;
 }
-.social-links-icon:hover,
-.social-links-icon:focus {
+.social-links__icon:hover,
+.social-links__icon:focus {
   background-color: #2196f3;
   fill: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* CLIENTS */
-.clients-list {
+.clients__list {
   display: flex;
-  align-content: space-between;
+  justify-content: space-between;
   margin: 0 15px 94px 15px;
 }
-.client {
+.clients__client {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -323,58 +307,63 @@ h2 {
   border-color: #afb1b8;
   fill: #afb1b8;
 }
-.client-logo {
+.clients__logo {
   display: flex;
   align-content: center;
   width: 106px;
 }
-.client:not(:last-child) {
-  margin-right: 30px;
-}
-.client:hover {
+.clients__client:hover {
   fill: #2196f3;
   border-color: #2196f3;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* FOOTER */
-.footer [href="/index.html"] {
-  color: inherit;
-}
 .footer {
   background-color: #2f303a;
   color: #ffffff;
 }
-.footer .container {
-  padding: 60px 0;
-}
-address {
-  font-style: normal;
-}
-.footer-address:not(:last-child) {
-  margin-bottom: 9px;
-}
-footer .logo {
+.footer__logo {
+  color: inherit;
   margin-bottom: 20px;
 }
-address .contact {
+.footer__container {
+  padding: 60px 0;
+  display: flex;
+}
+.footer__contact {
   color: rgba(255, 255, 255, 0.6);
 }
-h5 {
+.smaller-title {
   font-family: Roboto;
   font-weight: 700;
+}
+.footer__link:hover,
+.footer__link:focus {
+  color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__address {
+  font-style: normal;
+}
+.footer__link {
+  color: #757575;
+  text-decoration: none;
+  display: block;
+  font-style: normal;
+  margin: 9px auto;
 }
 .social-footer {
   margin-left: 70px;
 }
-.social-footer-links {
+.social-footer__links {
   width: 206px;
   height: 80px;
   display: flex;
   justify-content: space-between;
 }
 
-.social-footer-links-icon {
+.social-footer__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,18 +373,16 @@ h5 {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
-.social-footer-links-icon:hover {
+.social-footer__icon:hover,
+.social-footer__icon:focus {
   background-color: #2196f3;
   fill: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-container {
-  display: flex;
-}
-.e-mail-input {
+.newsletter {
   margin-left: 78px;
 }
-.footer-input {
+.newsletter__input {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -405,10 +392,10 @@ h5 {
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-input::placeholder {
+.newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-input-button {
+.newsletter__button {
   font-family: Roboto;
   color: #ffffff;
   background-color: #2196f3;
@@ -423,11 +410,11 @@ h5 {
   border-radius: 4px;
   cursor: pointer;
 }
-.footer-input-button-icon {
+.newsletter__button-icon {
   fill: #ffffff;
   margin-left: 24px;
 }
-.footer-input-button-inside {
+.newsletter__button-inside {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,7 +422,7 @@ h5 {
 
 /* PORTFOLIO */
 
-.button2 {
+.buttons__button {
   font-family: "Roboto", "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -447,8 +434,8 @@ h5 {
   padding: 6px 22px;
   border: 0;
 }
-.button2:hover,
-.button2:focus {
+.buttons__button:hover,
+.buttons__button:focus {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
@@ -456,21 +443,21 @@ h5 {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-section {
+.portfolio {
   margin: 94px auto;
 }
-.container .button-list {
+.buttons__list {
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
-.portfolio-buttons {
+.portfolio__buttons {
   margin-bottom: 50px;
 }
-.button3:not(:last-child) {
+.buttons__page:not(:last-child) {
   margin-right: 8px;
 }
-.text3 {
+.projects__project {
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
@@ -478,26 +465,26 @@ h5 {
   width: 370px;
   height: 404px;
 }
-.text3:hover {
+.projects__project:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.text3 .text3-portfolio {
+.project__layout {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
-.text3 figcaption {
+.project__data {
   margin: 20px auto;
 }
-.text3 h3,
-.text3 .portfolio-description {
+.project__title,
+.project__description {
   margin: 0 auto;
 }
-.text3 h3 {
+.project__title {
   font-weight: 700;
   color: #212121;
   font-size: 18px;
@@ -505,23 +492,23 @@ h5 {
   width: 322px;
   height: 36px;
 }
-.text3 .portfolio-description {
+.project__description {
   width: 322px;
   height: 30px;
 }
-.container .portfolio-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.container .text3 {
+.projects__project {
   margin-bottom: 30px;
 }
-.portfolio-image {
+.project__image {
   position: relative;
   overflow: hidden;
 }
-.portfolio-overlay {
+.project__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -532,7 +519,7 @@ h5 {
   background-color: rgba(33, 150, 243, 0.9);
   padding: 49px 45px 49px 24px;
 }
-.portfolio-overlay > p {
+.project__overlay-description {
   width: auto;
   height: auto;
   color: #ffffff;
@@ -540,7 +527,7 @@ h5 {
   margin: 0;
   line-height: 1.56;
 }
-.text3-portfolio:hover .portfolio-overlay {
+.project__layout:hover .project__overlay {
   transform: translatey(0);
 }
 /* BACKDROP */
