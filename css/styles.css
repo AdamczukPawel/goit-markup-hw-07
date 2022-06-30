@@ -530,7 +530,7 @@ footer {
 .project__layout:hover .project__overlay {
   transform: translatey(0);
 }
-/* BACKDROP */
+/* MODAL */
 .backdrop {
   position: fixed;
   left: 0;
