@@ -452,65 +452,69 @@
       </div>
     </footer>
     <!-- MODAL -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-button" data-modal-close>X</button>
-        <form class="modal-form">
-          <h3 class="modal-form-title">
-            Zostaw swoje dane w formularzu poniżej
-          </h3>
+        <button
+          type="button"
+          class="modal__close-button close-button"
+          data-modal-close
+        >
+          X
+        </button>
+        <form class="form modal__form">
+          <h3 class="form__title">Zostaw swoje dane w formularzu poniżej</h3>
           <label for="first-name">
-            <div class="modal-input-box">
-              <div class="modal-form-input-title">Imie</div>
+            <div class="form__input-box">
+              <div class="form__input-title">Imie</div>
               <input
                 id="first-name"
                 type="text"
                 name="first-name"
-                class="modal-input"
+                class="form__input"
                 required
               />
-              <svg width="12px" height="12px" class="modal-form-icon">
+              <svg width="12px" height="12px" class="form__icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </label>
           <label for="telephone-number">
-            <div class="modal-input-box">
-              <div class="modal-form-input-title">Telefon</div>
+            <div class="form__input-box">
+              <div class="form__input-title">Telefon</div>
               <input
                 id="telephone-number"
                 type="tel"
                 name="tel"
-                class="modal-input"
+                class="form__input"
                 required
               />
-              <svg width="12px" height="12px" class="modal-form-icon">
+              <svg width="12px" height="12px" class="form__icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </label>
           <label for="email" class="">
-            <div class="modal-input-box">
-              <div class="modal-form-input-title">Email</div>
+            <div class="form__input-box">
+              <div class="form__input-title">Email</div>
               <input
                 id="email"
                 type="email"
                 name="email"
-                class="modal-input"
+                class="form__input"
                 required
               />
-              <svg width="12px" height="12px" class="modal-form-icon">
+              <svg width="12px" height="12px" class="form__icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </label>
           <label for="comment">
-            <div class="modal-form-input-title">Komentarz</div>
+            <div class="form__input-title">Komentarz</div>
             <textarea
               id="comment"
               name="comment"
               placeholder="Wprowadź tekst"
-              class="modal-textarea"
+              class="form__textarea"
             ></textarea>
           </label>
           <div class="modal-terms">
@@ -518,10 +522,10 @@
               type="checkbox"
               name="statute-checkbox"
               id="user-policy"
-              class="modal-form-policy visually-hidden"
+              class="form__policy form__policy--hidden"
               required
             />
-            <label for="user-policy" class="modal-form-policy-text">
+            <label for="user-policy" class="form__policy-text">
               <span
                 >Oświadczam iż akceptuję
                 <a class="checkbox-statute-links" href="">Regulamin</a> i
@@ -531,8 +535,8 @@
               >
             </label>
           </div>
-          <div class="modal-submit">
-            <button type="submit" class="modal-form-button">Wyślij</button>
+          <div class="form__submit">
+            <button type="submit" class="form__button">Wyślij</button>
           </div>
         </form>
       </div>
