@@ -22,13 +22,13 @@ img {
   display: block;
 }
 
-.container {
-  width: 1200px;
-  margin: 0px auto;
-}
-
 header,
 section,
 footer {
   font-family: "Roboto", " Raleway", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0px auto;
 }/*# sourceMappingURL=main.css.map */
