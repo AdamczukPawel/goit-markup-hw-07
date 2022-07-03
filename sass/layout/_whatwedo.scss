@@ -1,20 +1,15 @@
 /* WHAT WE DO */
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-.what-we-do__list {
+.what-we-do {
+  &__list {
   display: flex;
   align-content: space-between;
-}
-.what-we-do__element {
+  }
+  &__element {
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
-}
-.what-we-do__label {
+  }
+  &__label {
   position: absolute;
   bottom: 0;
   left: 15px;
@@ -28,4 +23,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  }
 }
