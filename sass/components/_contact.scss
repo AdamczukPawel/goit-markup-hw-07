@@ -1,11 +1,11 @@
 .contact {
-    display: block;
-    &__link {
-    color: #757575;
-    text-decoration: none;
-    margin: auto 25px;
-    }
-    &__icon {
-    margin: auto 10px;
-    }
+  display: block;
+}
+.contact__link {
+  color: $secondaryColor;
+  text-decoration: none;
+  margin: auto 25px;
+}
+.contact__icon {
+  margin: auto 10px;
 }

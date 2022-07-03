@@ -1,12 +1,11 @@
 .team {
-    background-color: #f5f4fa;
+  background-color: $backgroundTeamColor;
+}
+.team__container {
+  margin-top: 94px;
+  padding: 94px 0;
+}
 
-    &__container {
-    margin-top: 94px;
-    padding: 94px 0;
-    }
-
-    &__title {
-    margin-bottom: 50px;
-    }
+.team__title {
+  margin-bottom: 50px;
 }

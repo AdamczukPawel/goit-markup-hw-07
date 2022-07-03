@@ -1,8 +1,8 @@
 .navigation {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    &__item {
-    margin: auto 23px;
-    }
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navigation__item {
+  margin: auto 23px;
 }
