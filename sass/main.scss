@@ -3,6 +3,7 @@
 
 @import "./base/common";
 @import "./base/container";
+@import "./base/section";
 
 @import "./components/modal";
 @import "./components/backdrop";
@@ -11,16 +12,14 @@
 @import "./components/contact";
 @import "./components/navigation";
 @import "./components/form";
-@import "./components/main-title";
 @import "./components/johns";
 @import "./components/social-links";
-@import "./components/title";
 @import "./components/smaller-title";
 @import "./components/project";
 @import "./components/buttons";
 
 @import "./layout/header";
-@import "./layout/advert";
+@import "./layout/hero";
 @import "./layout/whatwedo";
 @import "./layout/team";
 @import "./layout/footer";
