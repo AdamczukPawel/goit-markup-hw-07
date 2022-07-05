@@ -1,4 +1,4 @@
-.advert {
+.hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -12,12 +12,12 @@
   display: block;
   justify-content: center;
 }
-.advert__button {
+.hero__button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.advert__button {
+.hero__button {
   border-radius: 4px;
   padding: 10px auto;
   align-items: center;
